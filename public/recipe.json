@@ -5,7 +5,7 @@
       "recipe_id": 1,
       "Recipe_name": "Noodles",
       "Short_description": "Classic Italian pasta dish with creamy sauce",
-      "Ingredients": ["spaghetti", "bacon", "eggs", "Parmesan cheese", "black pepper"],
+      "Ingredients": ["spaghetti", "bacon", "eggs", "Parmesan cheese", "black pepper","carrots","Arborio rice"],
       "Preparing_time": 30,
       "Calories": 400
     },

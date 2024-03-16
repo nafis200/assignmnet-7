@@ -1,7 +1,10 @@
+import { useState } from "react";
 
 
 const Card = ({blog}) => {
     const {recipe_id,Recipe_image,Recipe_name,Short_description,Ingredients,Preparing_time,Calories} = blog
+
+    const item = [...Ingredients]
     return (
         <div>
              
@@ -15,8 +18,16 @@ const Card = ({blog}) => {
 
     }
     <hr />
-    <h1 className="font-semibold">{Ingredients.length}</h1>
-    
+    <h1 className="font-semibold">Ingrediants:{Ingredients.length}</h1>
+    <ul className="list-none">
+    {
+        item.map(fruit => <li>{fruit}</li> )
+    }
+    </ul>
+    <div>
+
+    </div>
+    <hr />
   </div>
 </div>
     </section>
@@ -26,3 +37,4 @@ const Card = ({blog}) => {
 };
 
 export default Card;
+
