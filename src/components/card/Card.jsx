@@ -1,5 +1,6 @@
 import { useState } from "react";
-
+import { IoTimeOutline } from "react-icons/io5";
+import { FaFireAlt } from "react-icons/fa";
 
 const Card = ({blog}) => {
     const {recipe_id,Recipe_image,Recipe_name,Short_description,Ingredients,Preparing_time,Calories} = blog
@@ -24,10 +25,13 @@ const Card = ({blog}) => {
         item.map(fruit => <li>{fruit}</li> )
     }
     </ul>
-    <div>
-
-    </div>
     <hr />
+    <div>
+       <span className=""><IoTimeOutline className="inline"></IoTimeOutline> <span>{Preparing_time}</span> </ span> 
+       <span></span>
+       <span className="lg:ml-2"> <FaFireAlt className="inline"></FaFireAlt> <span>{Calories}</span> </span>
+    </div>
+    <button className="btn lg:w-[150px] w-[100px] bg-green-400 rounded-2xl lg:mt-4 mt-2">want to Cook</button>
   </div>
 </div>
     </section>

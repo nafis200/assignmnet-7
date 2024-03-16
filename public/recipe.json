@@ -50,7 +50,7 @@
       "recipe_id": 6,
       "Recipe_name": "Fried Rice",
       "Short_description": "Comforting soup with fresh tomatoes and basil",
-      "Ingredients": ["tomatoes", "onion", "garlic", "vegetable broth", "fresh basil", "olive oil", "salt", "black pepper"],
+      "Ingredients": ["tomatoes", "onion", "garlic", "vegetable broth", "fresh basil", "olive oil"],
       "Preparing_time": 35,
       "Calories": 150
     }
