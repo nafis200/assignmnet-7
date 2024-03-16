@@ -1,0 +1,58 @@
+
+[
+    {
+      "Recipe_image": "https://i.postimg.cc/K8g4zZ2L/ikhsan-baihaqi-Rw-AXb8-Hv-s-U-unsplash.jpg",
+      "recipe_id": 1,
+      "Recipe_name": "Noodles",
+      "Short_description": "Classic Italian pasta dish with creamy sauce",
+      "Ingredients": ["spaghetti", "bacon", "eggs", "Parmesan cheese", "black pepper"],
+      "Preparing_time": 30,
+      "Calories": 400
+    },
+    {
+      "Recipe_image": "https://i.postimg.cc/yNpVXtsB/pexels-chan-walrus-958544.jpg",
+      "recipe_id": 2,
+      "Recipe_name": "Grilled Chicken Salad",
+      "Short_description": "Healthy salad with grilled chicken and fresh vegetables",
+      "Ingredients": ["chicken breast", "lettuce", "tomatoes", "cucumber", "bell peppers", "olive oil", "lemon juice"],
+      "Preparing_time": 20,
+      "Calories": 300
+    },
+    {
+      "Recipe_image": "https://i.postimg.cc/6qJxMNSs/kfc-chicken-1.jpg",
+      "recipe_id": 3,
+      "Recipe_name": "KFC",
+      "Short_description": "Quick and easy stir fry with assorted vegetables",
+      "Ingredients": ["broccoli", "carrots", "bell peppers", "snap peas", "onion", "garlic", "soy sauce"],
+      "Preparing_time": 25,
+      "Calories": 250
+    },
+    {
+      "Recipe_image": "https://i.postimg.cc/wBZCBp9t/pexels-foodie-factor-539451.jpg",
+      "recipe_id": 4,
+      "Recipe_name": "Mushroom soup",
+      "Short_description": "Creamy Italian rice dish with mushrooms",
+      "Ingredients": ["Arborio rice", "mushrooms", "vegetable broth", "Parmesan cheese", "onion", "garlic", "white wine"],
+      "Preparing_time": 40,
+      "Calories": 350
+    },
+    {
+      "Recipe_image": "https://i.postimg.cc/cLJ2MHHg/crispy-comte-cheesburgers-FT-RECIPE0921-6166c6552b7148e8a8561f7765ddf20b.webp",
+      "recipe_id": 5,
+      "Recipe_name": "Burger",
+      "Short_description": "Fluffy pancakes made with ripe bananas",
+      "Ingredients": ["flour", "ripe bananas", "milk", "eggs", "baking powder", "vanilla extract"],
+      "Preparing_time": 15,
+      "Calories": 200
+    },
+    {
+      "Recipe_image": "https://i.postimg.cc/xTf4nCLx/fried-rice.jpg",
+      "recipe_id": 6,
+      "Recipe_name": "Fried Rice",
+      "Short_description": "Comforting soup with fresh tomatoes and basil",
+      "Ingredients": ["tomatoes", "onion", "garlic", "vegetable broth", "fresh basil", "olive oil", "salt", "black pepper"],
+      "Preparing_time": 35,
+      "Calories": 150
+    }
+  ]
+  
