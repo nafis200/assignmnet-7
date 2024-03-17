@@ -1,7 +1,8 @@
-const Tables = () => {
+
+const Tables = ({count}) => {
   return (
     <div className="w-1/3 lg:mt-10 mt-12 ml-3 lg:ml-0">
-      <h1 className="font-bold text-center">Want to cook</h1>
+      <h1 className="font-bold text-center">Want to cook: {count}</h1>
       <hr className="mt-4 w-[400px]" />
       <section className="">
         <div class="overflow-x-auto lg:mr-20">
@@ -57,7 +58,7 @@ const Tables = () => {
               total time = <br /> <span>45 minutes</span>
             </p>
             <p className="font-bold">
-              Total calories = <br /> <span>1000 calories</span>{" "}
+              Total calories = <br /> <span>1000 calories</span>
             </p>
           </div>
         </div>

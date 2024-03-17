@@ -3,15 +3,36 @@ import Banner from "./components/banner/Banner";
 import Navbar from "./components/navbar/Navbar";
 import Cards from "./components/card/Cards";
 import Tables from "./components/table/Tables";
+import { useState } from "react";
+
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
+   const [count, setCount] = useState(0)
+   const [mark, setMark] = useState([])
+   const [ok,setOk] = useState('')
+  
+   
+
+   const handleWant = (id)=>{
+        if(mark.includes(id)){
+          toast('Already exists')
+         }
+        else{
+          setMark([...mark,id])
+          setCount(count + 1);
+        }
+
+   }
   return (
     <>
+      
       <Navbar></Navbar>
       <Banner></Banner>
       <div className="flex">
-        <Cards></Cards>
-        <Tables></Tables>
+        <Cards handleWant={handleWant}></Cards>
+        <Tables count={count} ok={ok}></Tables>
       </div>
     </>
   );
