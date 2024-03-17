@@ -35,8 +35,9 @@ function App() {
    }
 
    const CurrentCook = (id,name,time,calories)=>{
+
           const newOk1 = [id,name,time,calories]
-          setFood([...newOk1,food])
+          setFood([...food,newOk1])
           setCnt(cnt + 1)
           setCount(count - 1)
           setTimes(times + time)

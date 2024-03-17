@@ -1,6 +1,4 @@
 
-
-
 const TableWant = ({data,CurrentCook}) => {
    
     return (

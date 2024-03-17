@@ -4,7 +4,7 @@ const Tabledata = ({data}) => {
     return (
         <div>
             <tr>
-                <th>{data[0]}</th>
+                <th>{data[0] + 1}</th>
                 <td>{data[1]}</td>
                 <td>
                   {data[2]}

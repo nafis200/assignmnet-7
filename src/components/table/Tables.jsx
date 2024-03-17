@@ -37,4 +37,3 @@ const Tables = ({count,ok,CurrentCook,food,cnt,times,cal}) => {
 };
 
 export default Tables;
-

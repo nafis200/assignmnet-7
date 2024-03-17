@@ -1,6 +1,8 @@
 import Tabledata from "./Tabledata";
 
 const Table = ({ok,food,cnt,times,cal}) => {
+   console.log('ok',ok);
+   console.log('food',food);
     return (
         <div>
             <section className="mt-5">
@@ -24,7 +26,7 @@ const Table = ({ok,food,cnt,times,cal}) => {
               </thead>
             <tbody>
               {
-                ok.map(data=> <Tabledata data={data} food = {food} times={times} ></Tabledata> )
+                food.map(data=> <Tabledata data={data} food = {food} times={times} ></Tabledata> )
               }
             </tbody>
           </table>
