@@ -1,6 +1,6 @@
 import Tabledata from "./Tabledata";
 
-const Table = ({ok,food,cnt}) => {
+const Table = ({ok,food,cnt,times,cal}) => {
     return (
         <div>
             <section className="mt-5">
@@ -24,16 +24,16 @@ const Table = ({ok,food,cnt}) => {
               </thead>
             <tbody>
               {
-                ok.map(data=> <Tabledata data={data} food = {food}></Tabledata> )
+                ok.map(data=> <Tabledata data={data} food = {food} times={times} ></Tabledata> )
               }
             </tbody>
           </table>
           <div className="flex gap-2 lg:gap-12 mt-3 lg:ml-32">
             <p className="font-bold">
-              total time = <br /> <span>45 minutes</span>
+              total time = <br /> <span>{times} minutes</span>
             </p>
             <p className="font-bold">
-              Total calories = <br /> <span>1000 calories</span>
+              Total calories = <br /> <span>{cal} calories</span>
             </p>
           </div>
         </div>

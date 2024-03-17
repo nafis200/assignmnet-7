@@ -1,7 +1,7 @@
 import Table from "./Table";
 import TableWant from "./TableWant";
 
-const Tables = ({count,ok,CurrentCook,food,cnt}) => {
+const Tables = ({count,ok,CurrentCook,food,cnt,times,cal}) => {
   return (
     <div className=" lg:mt-10 ml-3 mt-12  lg:ml-0">
       <h1 className="font-bold text-center">Want to cook: {count}</h1>
@@ -31,7 +31,7 @@ const Tables = ({count,ok,CurrentCook,food,cnt}) => {
           </table>
         </div>
       </section>
-      <Table ok={ok} food={food} cnt={cnt}></Table>
+      <Table ok={ok} food={food} cnt={cnt} times={times} cal={cal}></Table>
     </div>
   );
 };

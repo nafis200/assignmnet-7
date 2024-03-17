@@ -1,16 +1,15 @@
 
 
-const Tabledata = ({data,food}) => {
-   console.log(food);
+const Tabledata = ({data}) => {
     return (
         <div>
             <tr>
-                <th>1</th>
-                <td>Cy Ganderton</td>
+                <th>{data[0]}</th>
+                <td>{data[1]}</td>
                 <td>
-                  Quality <br /> Specialist
+                  {data[2]}
                 </td>
-                <td>Blue</td>
+                <td>{data[3]}</td>
               </tr>
         </div>
     );

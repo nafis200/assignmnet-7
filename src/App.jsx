@@ -17,6 +17,10 @@ function App() {
    const [food, setFood] = useState([])
 
   const [cnt,setCnt] = useState(0)
+
+  const[times,setTimes] = useState(0)
+
+  const [cal, setCal] = useState(0)
   
    const handleWant = (id, Recipe_name,Preparing_time,Calories)=>{
         if(mark.includes(id)){  
@@ -35,6 +39,8 @@ function App() {
           setFood([...newOk1,food])
           setCnt(cnt + 1)
           setCount(count - 1)
+          setTimes(times + time)
+          setCal(cal + calories)
    }
 
   return (
@@ -44,7 +50,7 @@ function App() {
       <Banner></Banner>
       <div className="flex">
         <Cards handleWant={handleWant} ></Cards>
-        <Tables count={count} CurrentCook={CurrentCook} ok={ok} food={food} cnt = {cnt} ></Tables>
+        <Tables count={count} CurrentCook={CurrentCook} ok={ok} food={food} cnt = {cnt} cal={cal} times={times}></Tables>
       </div>
     </>
   );
