@@ -42,12 +42,12 @@ function App() {
           setCount(count - 1)
           setTimes(times + time)
           setCal(cal + calories)
-          // const ages = ok.filter(x =>{
-          //      if(x[0] !== id){
-          //        return x
-          //      }
-          // })
-          // console.log(ages);
+          const ages = ok.filter(x =>{
+               if(x[0] !== id){
+                 return x
+               }
+          })
+          setOk([...ages])
           
    }
 
