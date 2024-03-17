@@ -1,10 +1,10 @@
 import Tabledata from "./Tabledata";
 
-const Table = ({ok}) => {
+const Table = ({ok,food,cnt}) => {
     return (
         <div>
             <section className="mt-5">
-        <h1 className="font-bold text-center">Current cooking</h1>
+        <h1 className="font-bold text-center">Current:{cnt}</h1>
         <hr className="mt-5 w-[400px]" />
         <div class="overflow-x-auto lg:overflow-hidden lg:mr-20">
           <table class="table">
@@ -24,7 +24,7 @@ const Table = ({ok}) => {
               </thead>
             <tbody>
               {
-                ok.map(data=> <Tabledata data={data}></Tabledata> )
+                ok.map(data=> <Tabledata data={data} food = {food}></Tabledata> )
               }
             </tbody>
           </table>

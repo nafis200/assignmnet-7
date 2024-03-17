@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { IoTimeOutline } from "react-icons/io5";
 import { FaFireAlt } from "react-icons/fa";
-import { ToastContainer } from "react-toastify";
+
 
 const Card = ({ blog,handleWant}) => {
   const {
@@ -47,7 +47,7 @@ const Card = ({ blog,handleWant}) => {
               </span>
             </div>
             <button onClick={()=>handleWant(recipe_id, Recipe_name,Preparing_time,Calories)} className="btn lg:w-[150px] w-[100px] bg-green-400 rounded-2xl lg:mt-4 mt-2">
-              want to Cook <ToastContainer></ToastContainer>
+              want to Cook 
             </button>
           </div>
         </div>

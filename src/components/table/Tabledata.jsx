@@ -1,6 +1,7 @@
 
 
-const Tabledata = ({data}) => {
+const Tabledata = ({data,food}) => {
+   console.log(food);
     return (
         <div>
             <tr>
