@@ -3,7 +3,7 @@ import { IoTimeOutline } from "react-icons/io5";
 import { FaFireAlt } from "react-icons/fa";
 import { ToastContainer } from "react-toastify";
 
-const Card = ({ blog,handleWant }) => {
+const Card = ({ blog,handleWant}) => {
   const {
     recipe_id,
     Recipe_image,

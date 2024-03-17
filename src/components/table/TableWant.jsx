@@ -1,7 +1,7 @@
 
 
 
-const TableWant = ({data}) => {
+const TableWant = ({data,CurrentCook}) => {
    
     return (
         <div>
@@ -12,7 +12,7 @@ const TableWant = ({data}) => {
                  {data[2]}
                 </td>
                 <td>{data[3]}</td>
-                <button className="btn mt-2 bg-green-400 ml-5 ">{data[4]}</button>
+                <button onClick={()=>CurrentCook(data[0],data[1],data[2],data[3])} className="btn mt-2 bg-green-400 ml-5 ">{data[4]}</button>
               </tr>
         </div>
     );

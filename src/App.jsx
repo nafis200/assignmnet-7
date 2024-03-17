@@ -24,8 +24,10 @@ function App() {
           const newOk = [count,Recipe_name,Preparing_time,Calories,"preparing"]
           setOk([...ok,newOk])
         }
-        
+   }
 
+   const CurrentCook = (id,name,time,calories)=>{
+          console.log(id,name,time,calories);
    }
   return (
     <>
@@ -33,12 +35,11 @@ function App() {
       <Navbar></Navbar>
       <Banner></Banner>
       <div className="flex">
-        <Cards handleWant={handleWant}></Cards>
-        <Tables count={count} ok={ok}></Tables>
+        <Cards handleWant={handleWant} ></Cards>
+        <Tables count={count} CurrentCook={CurrentCook} ok={ok}></Tables>
       </div>
     </>
   );
 }
 
 export default App;
-

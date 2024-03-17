@@ -1,7 +1,7 @@
 import Table from "./Table";
 import TableWant from "./TableWant";
 
-const Tables = ({count,ok}) => {
+const Tables = ({count,ok,CurrentCook}) => {
   return (
     <div className=" lg:mt-10 ml-3 mt-12  lg:ml-0">
       <h1 className="font-bold text-center">Want to cook: {count}</h1>
@@ -25,7 +25,7 @@ const Tables = ({count,ok}) => {
               </thead>
             <tbody>
              {
-                ok.map(data=> <TableWant data = {data}></TableWant> )
+                ok.map(data=> <TableWant data = {data} CurrentCook={CurrentCook}></TableWant> )
              }
             </tbody>
           </table>
