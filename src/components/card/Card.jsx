@@ -46,7 +46,7 @@ const Card = ({ blog,handleWant }) => {
                 <span>{Calories}</span>{" "}
               </span>
             </div>
-            <button onClick={()=>handleWant(recipe_id)} className="btn lg:w-[150px] w-[100px] bg-green-400 rounded-2xl lg:mt-4 mt-2">
+            <button onClick={()=>handleWant(recipe_id, Recipe_name,Preparing_time,Calories)} className="btn lg:w-[150px] w-[100px] bg-green-400 rounded-2xl lg:mt-4 mt-2">
               want to Cook <ToastContainer></ToastContainer>
             </button>
           </div>
