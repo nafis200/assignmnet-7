@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import Card from "./Card";
 
-const Cards = ({handleWant}) => {
+const Cards = ({handleWant,toggle}) => {
   const [card, setCard] = useState([]);
   
   useEffect(() => {

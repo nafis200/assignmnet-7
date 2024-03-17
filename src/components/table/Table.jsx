@@ -8,14 +8,20 @@ const Table = ({ok}) => {
         <hr className="mt-5 w-[400px]" />
         <div class="overflow-x-auto lg:overflow-hidden lg:mr-20">
           <table class="table">
-            <thead>
+          <thead className="flex">
+              <tr className="lg:ml-4">
+               <th className=""></th>
+              </tr>
               <tr>
-                <th></th>
                 <th>Name</th>
-                <th>Time</th>
+              </tr>
+              <tr className="lg:ml-10 ml-14" >
+                <th className="">Time</th>
+              </tr>
+              <tr>
                 <th>Calories</th>
               </tr>
-            </thead>
+              </thead>
             <tbody>
               {
                 ok.map(data=> <Tabledata data={data}></Tabledata> )

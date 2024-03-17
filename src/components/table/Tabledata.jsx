@@ -1,7 +1,6 @@
 
 
 const Tabledata = ({data}) => {
-    console.log(data);
     return (
         <div>
             <tr>
